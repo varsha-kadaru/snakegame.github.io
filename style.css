@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: cursive;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/8552481.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body{
+    min-height: 100vh; 
+    margin-left: 45px;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+}
+#board{
+    background: linear-gradient(rgb(105, 191, 212),rgb(66, 70, 189));
+    width: 85vmin;
+    height: 85vmin;
+    border: 2px solid black;
+    display:grid;
+    grid-template-columns:repeat(18,1fr) ;
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background-color: rgb(211, 37, 37);
+    border-radius: 10px;
+    border: 0.5px solid black;
+    transform:scale(1.02);
+}
+.food{
+    background:linear-gradient(green,yellow);
+    border-radius: 10px;
+    border: 0.5px solid black;
+}
+.snake{
+    background-color: rgb(241, 71, 100);
+    border-radius: 13px;
+    border: 0.25vmin solid white;
+}
+#score{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 130px;
+    left: 1000px;
+
+}
+#hiscoreBox{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 75px;
+    left: 1000px;
+
+}
